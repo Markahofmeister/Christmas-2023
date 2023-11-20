@@ -3,6 +3,7 @@ firmware/.metadata/
  **/*.cmd
  **/plantuml.jar
  figures/hierarchy.txt
+ cloned-repos/
 
 # ### STM32 files ###
 
