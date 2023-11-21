@@ -4,3 +4,7 @@
 [submodule "Christmas-2023_firmware"]
 	path = Christmas-2023_firmware
 	url = ./Christmas-2023_firmware
+[submodule "Christmas-2023_firmware/"]
+	url = git@github.com:Markahofmeister/Christmas-2023_firmware.git
+[submodule "Christmas-2023_PCB/"]
+	url = git@github.com:Markahofmeister/Christmas-2023_PCB.git
