@@ -4,9 +4,9 @@ firmware/.metadata/
  **/*.cmd
  **/plantuml.jar
  figures/hierarchy.txt
- **/*.avi
+ media/*.avi
 media/*.mp4
-
+media/enclosure-exploded_Mk-I.avi
 # ### STM32 files ###
 
 # Object files
