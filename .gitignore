@@ -4,8 +4,8 @@ firmware/.metadata/
  **/*.cmd
  **/plantuml.jar
  figures/hierarchy.txt
- media/*.avi
- media/*.mp4
+ **/*.avi
+media/*.mp4
 
 # ### STM32 files ###
 
