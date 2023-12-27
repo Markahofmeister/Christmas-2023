@@ -1,0 +1,9 @@
+@startuml
+:Power On;
+:Initialize HAL and system clock;
+:Initialize debug LED, shift register pins, and amplifier control pins as outputs;
+:Initialize user button pins as EXTI and ADC input;
+:Mount FATFS on inserted uSD card TF;
+repeat :dead loop - wait for interrupts
+repeat while
+@enduml
