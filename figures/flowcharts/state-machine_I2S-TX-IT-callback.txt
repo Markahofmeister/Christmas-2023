@@ -1,0 +1,13 @@
+@startuml
+#Red: I2S Data TX Completed Interrupt;
+partition "I2S Data TX Completed ISR" {
+   if (end of file reached?) then (yes) 
+  	:exit function;
+  	 stop
+   else (no) 
+	:load signal data buffers with new audio data;
+	:Call HAL I2S TX interrupt function to transmit new data;
+   endif
+   stop
+}
+@enduml

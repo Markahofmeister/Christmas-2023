@@ -24,7 +24,7 @@ component pinouts-datasheets as pd {
     datasheets for electrical/mechanical components
   ]
 }
-component "system-diagrams" as sd{
+component system-diagrams as sd{
   component sdi [
     High-level diagrams of
     physical systems & subsystems
@@ -36,22 +36,31 @@ component fab {
     design & fabrication
   ]
 }
-component software {
+database firmware #Green {
   component si [
     source code & supporting
-    libraries (if applicable)
+    libraries 
   ]
 }
-component electrical {
+note bottom of si
+  Submodule Repository
+end note
+
+database electrical #Blue {
   component ei [
     Schematics, PCB footprints,
-    and libararies (if applicable)
+    and libraries 
   ]
 }
+note bottom of ei
+  Submodule Repository
+end note
+
+
 [ROOT] -down-> media
 [ROOT] -down-> figures
 [ROOT] -down-> fab
-[ROOT] -down-> software
+[ROOT] -down-> firmware
 [ROOT] -down-> electrical
 figures -down-> flowcharts
 figures -down-> pd

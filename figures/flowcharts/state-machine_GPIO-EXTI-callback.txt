@@ -1,0 +1,9 @@
+@startuml
+
+#Red: GPIO X External Interrupt;
+partition "GPIO X EXTI Callback" {
+	:playIndex = X;
+	stop
+}
+
+@enduml

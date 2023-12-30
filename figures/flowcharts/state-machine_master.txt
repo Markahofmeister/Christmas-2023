@@ -1,0 +1,13 @@
+@startuml
+start
+split 
+	:Main thread - playWavFile[playIndex];
+split again 
+	:Global Timer Interrupt;
+	:Read ADC pin and adjust amplifier gain and volume bar UI;
+split again
+	:I2S TX complete Interrupt;
+	:If more data, continue to send I2S audio data chunks to amplifier;
+end split
+stop
+@enduml

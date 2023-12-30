@@ -1,7 +1,7 @@
 
 <Desc.>
 
-#### A full detailing can be found [here](www.markhofmeister.com/) 
+#### A full detailing can be found [here](https://www.markhofmeister.com/stm32-audio-dev-panel) 
 
 ## Directory Structure 
 
@@ -9,13 +9,17 @@
 
 ## System Diagram
 
-![](figures/system-diagrams/system-diagram-v)
+![](figures/system-diagrams/system-diagram_Mk-I.png)
 
 ## Flowchart 
 
-![](figures/system-diagrams/flowchart-v) 
+![](figures/system-diagrams/state-machine_GPIO-EXTI-callback.png) 
+![](figures/system-diagrams/state-machine_I2S-TX-IT-callback.png) 
+![](figures/system-diagrams/state-machine_main-thread.png) 
+![](figures/system-diagrams/state-machine_master.png) 
+![](figures/system-diagrams/state-machine_play-Wav-File.png) 
+![](figures/system-diagrams/state-machine_timer-interrupt-callback.png)
 
-## Exploded Mechanical View
+## Mechanical View
 	
-![](fab/exploded-view-v)
-![](fab/exploded-view-animation-v)
+![](media/enclosure-render_Mk-I_shrank.png)

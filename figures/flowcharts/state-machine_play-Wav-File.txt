@@ -1,0 +1,22 @@
+@startuml
+:Open file with passed file name string;
+:Read first 44 bytes (header data);
+if(Correct header format?) then (no) 
+  :EXIT FAILURE;
+   stop
+(yes) elseif (Correct data structuring?) then (no)
+  :EXIT FAILURE;
+   stop;
+else (yes) 
+:Read in first 4096 bytes of data;
+while (more data?) is (yes) 
+   if (ready to send next chunk?) then (no)  
+     :Skip loop;
+   else (yes) 
+     :Read next data chunk;
+     :Call I2S IT TX function;
+   endif
+endwhile (no)
+:close file;
+stop
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+#Red: Timer Period Elapsed Interrupt;
+partition "Timer Period Elapsed Callback ISR" {
+	:Start ADC Conversion and poll for completed conversion;
+	:Determine new volume from ADC return and shift in new volume LED UI state;
+	switch(volume)
+  	case(0)
+		:reset amplifier gain pins;
+		:Activate 3dB gain pin;
+  	case(1)
+		:reset amplifier gain pins;
+		:Activate 6dB gain pin;
+  	case(2)
+    		:reset amplifier gain pins;
+		:Activate 9dB gain;
+	case(3)
+		:reset amplifier gain pins;
+		:Activate 12dB gain pin;
+	case(4)
+		:reset amplifier gain pins;
+		:Activate 15dB gain pin;
+	endswitch
+	stop
+}
+@enduml
